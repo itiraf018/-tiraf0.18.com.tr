@@ -83,3 +83,27 @@ nav a:hover {
 .icon {
   font-size: 20px;
 }
+
+/* Home - Hakkımızda */
+.about {
+  background-color: #222;
+  padding: 15px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  line-height: 1.5;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f0a500;
+}
+
+.about p {
+  font-size: 16px;
+  text-align: center;
+  color: #ddd;
+}
+
