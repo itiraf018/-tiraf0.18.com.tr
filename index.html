@@ -4,67 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>İtiraf0.18</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #loader {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      background-color: white;
-      border-radius: 50%;
-      animation: bounce 1.2s infinite ease-in-out;
-    }
-
-    .dot:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .dot:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    @keyframes bounce {
-      0%, 80%, 100% {
-        transform: scale(0);
-      }
-      40% {
-        transform: scale(1);
-      }
-    }
-
-    #mainContent {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-    }
-
-    #mainContent h1 {
-      margin-top: 80px;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-  </style>
+  <link rel="stylesheet" href="style/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -75,18 +16,49 @@
     <div class="dot"></div>
   </div>
 
-  <!-- Ana İçerik -->
-  <div id="mainContent">
-    <h1>İtiraf0.18</h1>
+  <!-- Ana Sayfa -->
+  <div id="mainContent" style="display:none;">
+
+    <!-- Giriş -->
+    <section id="home">
+      <h1>İtiraf0.18</h1>
+    </section>
+
+    <!-- Canlı Etkinlikler -->
+    <section id="etkinlik">
+      <h2>🎤 Canlı Etkinlikler</h2>
+      <p>Buraya canlı yayın embed'i veya etkinlik duyurusu gelecek.</p>
+    </section>
+
+    <!-- Videolar -->
+    <section id="videolar">
+      <h2>🎥 Videolar</h2>
+      <p>Anonim videolar burada gösterilecek.</p>
+    </section>
+
+    <!-- İtiraf Gönder -->
+    <section id="itiraf">
+      <h2>💌 İtiraf Gönder</h2>
+      <p>İtiraf gönderme formu buraya eklenecek.</p>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim">
+      <h2>📞 İletişim</h2>
+      <p>Instagram ve diğer iletişim bilgileri buraya.</p>
+    </section>
+
+    <!-- Menü -->
+    <nav>
+      <a href="#home"><span class="material-icons icon">home</span>Home</a>
+      <a href="#etkinlik"><span class="material-icons icon">event</span>Etkinlik</a>
+      <a href="#videolar"><span class="material-icons icon">videocam</span>Videolar</a>
+      <a href="#itiraf"><span class="material-icons icon">favorite</span>İtiraf</a>
+      <a href="#iletisim"><span class="material-icons icon">contact_mail</span>İletişim</a>
+    </nav>
+
   </div>
 
-  <script>
-    // Yükleme ekranını 2 saniye sonra gizle
-    setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("mainContent").style.display = "flex";
-    }, 2000);
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
