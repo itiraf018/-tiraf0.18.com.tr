@@ -41,3 +41,22 @@ document.getElementById("themeToggle").addEventListener("click", () => {
 });
 <link rel="stylesheet" href="style/main.css" />
 <script src="js/main.js" defer></script>
+// Sayfa yüklendiğinde tema uygula
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.body.classList.add(savedTheme + "-mode");
+
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    if (document.body.classList.contains("light-mode")) {
+      document.body.classList.replace("light-mode", "dark-mode");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.replace("dark-mode", "light-mode");
+      localStorage.setItem("theme", "light");
+    }
+  });
+});
+
