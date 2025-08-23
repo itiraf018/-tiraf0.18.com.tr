@@ -74,7 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("theme", "light");
       }
     });
-  }
-});
+  fetch("https://ngl.link/api/itiraflar", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ mesaj: itirafMetni }),
+})
+.then(res => res.json())
+.then(data => console.log("Başarılı gönderim:", data))
+.catch(err => console.error("Hata:", err));
+
 
 
