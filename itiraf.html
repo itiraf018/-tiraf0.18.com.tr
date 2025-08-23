@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>İtiraf0.18 - İtiraf Gönder</title>
-  <link rel="stylesheet" href="style/main.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-</head>
-<body>
-
-  <header>
-    <h1>İtiraf0.18</h1>
-  </header>
-
-  <nav>
-    <a href="index.html"><span class="material-icons icon">home</span>Home</a>
-    <a href="etkinlik.html"><span class="material-icons icon">event</span>Etkinlik</a>
-    <a href="videolar.html"><span class="material-icons icon">videocam</span>Videolar</a>
-    <a href="itiraf.html" class="active"><span class="material-icons icon">favorite</span>İtiraf</a>
-    <a href="iletisim.html"><span class="material-icons icon">contact_mail</span>İletişim</a>
-  </nav>
-
-  <main>
-    <section class="confession">
-      <h2>İtiraf Gönder</h2>
-      <p>Buraya itiraf gönderme formu eklenecek.</p>
-    </section>
-  </main>
-
-</body>
-</html>
+<section class="itiraf-form">
+  <h2>Anonim İtiraf Gönder</h2>
+  <form id="itirafForm">
+    <textarea id="itirafText" placeholder="İtirafını buraya yaz..." required></textarea>
+    <button type="submit">Gönder</button>
+  </form>
+  <p id="formStatus"></p>
+</section>
