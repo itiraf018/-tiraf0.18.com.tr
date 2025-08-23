@@ -129,9 +129,6 @@ body {
 .itiraf-buton:hover {
   background-color: #e91e63;
 }
-
-
-
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
