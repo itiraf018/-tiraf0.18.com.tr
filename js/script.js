@@ -39,3 +39,5 @@ document.getElementById("themeToggle").addEventListener("click", () => {
     localStorage.setItem("theme", "light");
   }
 });
+<link rel="stylesheet" href="style/main.css" />
+<script src="js/main.js" defer></script>
