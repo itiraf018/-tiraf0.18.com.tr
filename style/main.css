@@ -162,3 +162,27 @@ body {
   color: green;
 }
 
+/* Açık Tema (Varsayılan) */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Koyu Tema */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Ortak stiller (temadan bağımsız) */
+button#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+}
