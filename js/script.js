@@ -21,3 +21,21 @@ document.getElementById("itirafForm").addEventListener("submit", function (e) {
   document.getElementById("formStatus").style.color = "green";
   document.getElementById("itirafForm").reset();
 });
+// Sayfa yüklendiğinde kayıtlı temayı uygula
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.body.classList.add(savedTheme + "-mode");
+});
+
+// Butona tıklanınca tema değiştir
+document.getElementById("themeToggle").addEventListener("click", () => {
+  if (document.body.classList.contains("light-mode")) {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    localStorage.setItem("theme", "light");
+  }
+});
