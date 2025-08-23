@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("theme", "light");
       }
     });
-  fetch("https://ngl.link/api/itiraflar", {
+  fetch("https://ngl.link/itiraf.018", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
