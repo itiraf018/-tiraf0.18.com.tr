@@ -116,18 +116,20 @@ body {
 
 .itiraf-buton {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #e91e63;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 16px;
   margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ff4081;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
 }
 
 .itiraf-buton:hover {
-  background-color: #c2185b;
+  background-color: #e91e63;
 }
+
 
 
 body.dark-mode {
