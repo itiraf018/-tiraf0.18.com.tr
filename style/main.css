@@ -186,3 +186,5 @@ button#themeToggle {
   background-color: transparent;
   font-size: 20px;
 }
+<link rel="stylesheet" href="style/main.css" />
+<script src="js/main.js" defer></script>
