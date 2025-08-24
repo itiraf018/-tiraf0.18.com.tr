@@ -6,50 +6,51 @@ window.addEventListener("load", () => {
   }, 2000);
 });
 
+// İtiraf formu gönderimi
 document.getElementById("itirafForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  const text = document.getElementById("itirafText").value.trim();
+  const itirafMetni = document.getElementById("itirafText").value.trim();
 
-  if (text.length < 5) {
-    document.getElementById("formStatus").innerText = "Lütfen en az 5 karakterlik bir itiraf yazın.";
-    document.getElementById("formStatus").style.color = "red";
+  if (itirafMetni.length < 5) {
+    const status = document.getElementById("formStatus");
+    status.innerText = "Lütfen en az 5 karakterlik bir itiraf yazın.";
+    status.style.color = "red";
     return;
   }
 
-  // Geliştirme: burada sunucuya gönderim yapılabilir
-  document.getElementById("formStatus").innerText = "Teşekkürler! İtirafın gönderildi.";
-  document.getElementById("formStatus").style.color = "green";
-  document.getElementById("itirafForm").reset();
+  // Örnek fetch isteği
+  fetch("https://ngl.link/itiraf.018", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ mesaj: itirafMetni }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      const status = document.getElementById("formStatus");
+      status.innerText = "Teşekkürler! İtirafın gönderildi.";
+      status.style.color = "green";
+      this.reset();
+      console.log("Başarılı gönderim:", data);
+    })
+    .catch((err) => {
+      const status = document.getElementById("formStatus");
+      status.innerText = "Gönderim sırasında hata oluştu.";
+      status.style.color = "red";
+      console.error("Hata:", err);
+    });
 });
-// Sayfa yüklendiğinde kayıtlı temayı uygula
+
+// Tema değiştirici
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "light";
   document.body.classList.add(savedTheme + "-mode");
-});
 
-// Butona tıklanınca tema değiştir
-document.getElementById("themeToggle").addEventListener("click", () => {
-  if (document.body.classList.contains("light-mode")) {
-    document.body.classList.remove("light-mode");
-    document.body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.body.classList.remove("dark-mode");
-    document.body.classList.add("light-mode");
-    localStorage.setItem("theme", "light");
-  }
-});
-<link rel="stylesheet" href="style/main.css" />
-<script src="js/main.js" defer></script>
-// Sayfa yüklendiğinde tema uygula
-document.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  document.body.classList.add(savedTheme + "-mode");
+  const themeToggle = document.getElementById("themeToggle");
+  if (!themeToggle) return;
 
-  const btn = document.getElementById("themeToggle");
-  if (!btn) return;
-
-  btn.addEventListener("click", () => {
+  themeToggle.addEventListener("click", () => {
     if (document.body.classList.contains("light-mode")) {
       document.body.classList.replace("light-mode", "dark-mode");
       localStorage.setItem("theme", "dark");
@@ -59,31 +60,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const themeToggle = document.getElementById("themeToggle");
-  const savedTheme = localStorage.getItem("theme") || "light";
-  document.body.classList.add(savedTheme + "-mode");
-
-  if (themeToggle) {
-    themeToggle.addEventListener("click", function () {
-      if (document.body.classList.contains("light-mode")) {
-        document.body.classList.replace("light-mode", "dark-mode");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.body.classList.replace("dark-mode", "light-mode");
-        localStorage.setItem("theme", "light");
-      }
-    });
-  fetch("https://ngl.link/itiraf.018", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ mesaj: itirafMetni }),
-})
-.then(res => res.json())
-.then(data => console.log("Başarılı gönderim:", data))
-.catch(err => console.error("Hata:", err));
-
-
-
