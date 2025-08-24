@@ -149,17 +149,16 @@ p#description {
   justify-content: center;
   gap: 20px;
   padding: 20px 0;
-  background-color: #f1f1f1;
-  position: relative; /* İstersen fixed yapabilirim */
-  bottom: 0;
+  background-color: #1e1e1e; /* Temaya uygun koyu arka plan */
+  position: relative; /* İstersen fixed yaparız */
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
 }
 
 .bottom-buttons button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #ff4081; /* Tema uyumlu pembe */
   color: white;
   border: none;
   border-radius: 6px;
@@ -168,11 +167,7 @@ p#description {
 }
 
 .bottom-buttons button:hover {
-  background-color: #0056b3;
+  background-color: #e91e63;
 }
-
-position: fixed;
-bottom: 0;
-
 
 
