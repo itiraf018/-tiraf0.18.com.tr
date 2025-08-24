@@ -60,3 +60,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .material-icons {
+  font-size: 40px;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
