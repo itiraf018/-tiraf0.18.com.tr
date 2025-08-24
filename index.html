@@ -3,19 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>itiraf0.18</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>itiraf0.18 - Ana Sayfa</title>
+
+  <style>
+    /* CSS kodlarını buraya yapıştır */
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff4081;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 600px;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-  
-   <nav>
-    <a href="index.html"><span class="material-icons icon">home</span>Home</a>
-    <a href="etkinlik.html" class="active"><span class="material-icons icon">event</span>Etkinlik</a>
-    <a href="videolar.html"><span class="material-icons icon">videocam</span>Videolar</a>
-    
-  </nav>
-  
-  <h1>itiraf0.18</h1>
-  <p id="description"></p>
+  <header>
+    <h1>itiraf0.18</h1>
+  </header>
+
+  <main>
+    <p class="description">
+      Merhaba ben itiraf0.18'in admini. Bu siteyi iki kişi kurduk ama sayfayı sadece ben yönetiyorum.
+      Burada paylaşılan her şey gizli kalacaktır.
+    </p>
+  </main>
+
+  <script>
+    // JS kodlarını buraya yapıştırabilirsin
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("index.html içindeki script çalışıyor.");
+    });
+  </script>
 </body>
 </html>
