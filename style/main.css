@@ -58,7 +58,7 @@ section {
 
 h1, h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 300px;
 }
 
 nav a {
@@ -140,6 +140,9 @@ p#description {
   font-size: 1.2rem;
   max-width: 600px;
   color: #e0e0e0;
+}
+#yourTextContainer {
+  margin-top: 300px; /* veya istediğin kadar boşluk */
 }
 
 
