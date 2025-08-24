@@ -1,10 +1,18 @@
 /* Genel ayarlar */
 body {
   margin: 0;
-  background-color: #111;
+  background-color: #121212;
   color: #fff;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Yükleme */
@@ -53,7 +61,6 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-/* Menü */
 nav {
   position: fixed;
   bottom: 0;
@@ -84,7 +91,6 @@ nav a:hover {
   font-size: 20px;
 }
 
-/* Home - Hakkımızda */
 .about {
   background-color: #222;
   padding: 15px 20px;
@@ -107,13 +113,6 @@ nav a:hover {
   color: #ddd;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
 .itiraf-buton {
   display: inline-block;
   margin-top: 20px;
@@ -129,23 +128,6 @@ body {
 .itiraf-buton:hover {
   background-color: #e91e63;
 }
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-  transition: background-color 0.3s, color 0.3s;
-body {
-  background-color: #121212;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 50px;
-  text-align: center;
-}
 
 h1 {
   font-size: 3rem;
@@ -158,8 +140,3 @@ p#description {
   max-width: 600px;
   color: #e0e0e0;
 }
-
-
-
-
-/* Gerekirse diğer elementlerin koyu tema renklerini buraya ekle */
