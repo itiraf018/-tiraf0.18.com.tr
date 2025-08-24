@@ -144,5 +144,28 @@ p#description {
 #yourTextContainer {
   margin-top: 300px; /* veya istediğin kadar boşluk */
 }
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  color: white;
+  z-index: 999;
+}
+
+.bottom-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bottom-menu a:hover {
+  text-decoration: underline;
+}
+
 
 
