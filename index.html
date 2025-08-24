@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Çankırı İtiraf</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>itiraf0.18 - Anasayfa</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
-    .itiraf-buton {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #ff4081;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    .itiraf-buton:hover {
-      background-color: #e91e63;
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #ff4081;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 50px;
     }
   </style>
 </head>
-<body class="dark-mode">
-
-  <h1>Hoş Geldin!</h1>
-  <p>Anonim olarak itiraf göndermek ister misin?</p>
-
-  <!-- BUTON -->
-  <a href="https://ngl.link/itiraf018" target="_blank" class="itiraf-buton">
-    📝 Anonim İtiraf Gönder
-  </a>
+<body>
 
   <nav>
     <a href="index.html"><span class="material-icons icon">home</span>Home</a>
@@ -43,15 +68,12 @@
       <h2>Hakkımızda</h2>
       <p>Merhaba ben itiraf0.18'in admini. Bu siteyi iki kişi kurduk ama sayfayı sadece ben yönetiyorum. Burada paylaşılan her şey gizli kalacaktır.</p>
     </section>
+
+    <section class="hero">
+      <h1>Çankırı'nın Anonim İtiraf Sayfası</h1>
+      <p>İsmini gizle, içini dök!</p>
+    </section>
   </main>
 
-<section class="hero">
-  <h1>Çankırı'nın Anonim İtiraf Sayfası</h1>
-  <p>İsmini gizle, içini dök!</p>
-
-  <a href="https://ngl.link/itiraf018" target="_blank" class="itiraf-buton">
-    📝 Anonim İtiraf Gönder
-  </a>
-</section>
-
-
+</body>
+</html>
