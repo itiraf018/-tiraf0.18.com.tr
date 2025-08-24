@@ -141,51 +141,5 @@ p#description {
   max-width: 600px;
   color: #e0e0e0;
 }
-.cards-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 40px 20px;
-}
 
-.card {
-  background-color: #222;
-  color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  width: 200px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card .material-icons {
-  font-size: 40px;
-  color: #f0a500;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.card h3 {
-  margin: 0 0 10px;
-}
-
-.card-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #ff4081;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.card-link:hover {
-  background-color: #e91e63;
-}
 
