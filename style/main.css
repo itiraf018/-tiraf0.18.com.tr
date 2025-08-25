@@ -212,7 +212,8 @@ nav a:hover {
 }
 
 .video-wrapper {
-  margin-bottom: 30px;
+  max-width: 500px;
+  margin: 0 auto 40px;
 }
 
 video {
@@ -224,12 +225,11 @@ video {
 
 .responsive-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 oranı */
+  padding-bottom: 56.25%; /* 16:9 oran */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .responsive-video iframe {
