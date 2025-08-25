@@ -4,35 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>İtiraf0.18 - Videolar</title>
-  <link rel="stylesheet" href="style/main.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-</head>
-<body>
 
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+
+<body class="dark-mode">
+
+  <!-- Üst Başlık -->
   <header>
     <h1>İtiraf0.18</h1>
   </header>
 
+  <!-- Navigasyon Menüsü -->
   <nav>
-    <a href="index.html"><span class="material-icons icon"></span>Home</a>
-    <a href="etkinlik.html"><span class="material-icons icon"></span>Etkinlik</a>
-    <a href="videolar.html" class="active"><span class="material-icons icon"></span>Videolar</a>
-    
+    <a href="index.html"><span class="material-icons icon">home</span> Home</a>
+    <a href="etkinlik.html"><span class="material-icons icon">event</span> Etkinlik</a>
+    <a href="videolar.html" class="active"><span class="material-icons icon">videocam</span> Videolar</a>
   </nav>
 
+  <!-- Ana İçerik -->
   <main>
     <section class="videos">
       <h2>Videolar</h2>
-      <p>Buraya video içerikleri gelecek.</p>
+
+      <div class="video-wrapper">
+        <video controls width="100%">
+          <source src="videos/ornek-video.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <p>Bu videoda gizli itiraflardan bir kesit izleyebilirsiniz.</p>
+      </div>
+
+      <!-- İkinci Video Örneği -->
+      <div class="video-wrapper">
+        <video controls width="100%">
+          <source src="videos/ornek-video-2.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <p>Katıldığınız etkinlikten kamera görüntüleri.</p>
+      </div>
+
     </section>
   </main>
 
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
-<body class="dark-mode">
-  <!-- sayfa içeriği -->
-</body>
-
-<link rel="stylesheet" href="css/main.css">
-<script src="js/main.js" defer></script>
-
