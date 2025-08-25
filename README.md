@@ -1,4 +1,4 @@
-# İtiraf0.18 Web Sitesi
+# İtiraf0.18 Web Sitesi / Kurulum ve amacı 
 
 **itiraf0.18**, gizlilik esaslı anonim itiraflar ve içeriklerin paylaşıldığı, modern ve sade tasarıma sahip bir web sitesidir. Şu anda beta aşamasındadır ve gelişmeye devam etmektedir.
 
