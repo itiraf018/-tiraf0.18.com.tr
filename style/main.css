@@ -103,17 +103,16 @@ nav a:hover {
    ALT BUTONLAR (Footer)
 ------------------------ */
 .bottom-buttons {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  text-align: center; /* Butonları ortalar */
-  display: flex;
-  justify-content: center; /* Ortalamak için */
-  gap: 15px; /* Butonlar arasında boşluk */
+  position: fixed;      /* Footer sabit kalsın istersen */
+  bottom: 20px;         /* Sayfanın altından 20px yukarıda */
+  width: 100%;          /* Tüm genişlik */
+  display: flex;        /* Flexbox kullan */
+  justify-content: center; /* Butonları yatayda ortala */
+  gap: 15px;            /* Butonlar arası boşluk */
+  background-color: #121212; /* İstersen arka plan rengi */
   padding: 10px 0;
-  background-color: #121212; /* Opsiyonel: footer arka planı */
+  z-index: 1000;        /* Üstte kalması için */
 }
-
 .bottom-buttons button {
   padding: 10px 20px;
   font-size: 1rem;
@@ -124,7 +123,6 @@ nav a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .bottom-buttons button:hover {
   background-color: #e73370;
 }
