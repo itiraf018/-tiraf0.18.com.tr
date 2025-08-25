@@ -103,31 +103,31 @@ nav a:hover {
    ALT BUTONLAR (Footer)
 ------------------------ */
 .bottom-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-  background-color: #1e1e1e;
-  margin-top: auto;
+  position: fixed;
+  bottom: 20px;
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  text-align: center; /* Butonları ortalar */
+  display: flex;
+  justify-content: center; /* Ortalamak için */
+  gap: 15px; /* Butonlar arasında boşluk */
+  padding: 10px 0;
+  background-color: #121212; /* Opsiyonel: footer arka planı */
 }
 
 .bottom-buttons button {
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 1rem;
   background-color: #ff4081;
-  color: white;
   border: none;
   border-radius: 6px;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .bottom-buttons button:hover {
-  background-color: #e91e63;
+  background-color: #e73370;
 }
-
 /* ----------------------
    HAKKIMIZDA KUTUSU
 ------------------------ */
