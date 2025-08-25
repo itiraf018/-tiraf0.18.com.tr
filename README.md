@@ -2,6 +2,13 @@
 
 **itiraf0.18**, gizlilik esaslı anonim itiraflar ve içeriklerin paylaşıldığı, modern ve sade tasarıma sahip bir web sitesidir. Şu anda beta aşamasındadır ve gelişmeye devam etmektedir.
 
+## Telif Hakkı ve Lisans
+
+Bu projede kullanılan tüm görseller, logolar, ikonlar ve diğer içerikler **itiraf0.18** ekibine aittir.  
+Herhangi bir izinsiz kopyalama, dağıtım veya ticari kullanım kesinlikle yasaktır.  
+
+Lütfen içeriklerin kullanımı ile ilgili izin almak için bizimle iletişime geçin.
+
 ---
 
 ## İçindekiler
