@@ -165,6 +165,34 @@ p {
 .itiraf-buton:hover {
   background-color: #e91e63;
 }
+.description {
+  margin-top: 80px; /* Yazıyı aşağıya çeker */
+  padding: 0 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.anonim-button {
+  margin-top: 40px; /* Butonu da yazıdan aşağıya çeker */
+  text-align: center;
+}
+
+.anonim-button button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff4081;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.anonim-button button:hover {
+  background-color: #e73370;
+}
+
 
 /* ----------------------
    RESPONSIVE TASARIM
