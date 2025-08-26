@@ -5,23 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>İtiraf0.18 - Etkinlik yapmak istediğin tarihi seç</title>
   <link rel="stylesheet" href="style/main.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
-
 <body class="dark-mode">
-
   <header>
     <h1>İtiraf0.18</h1>
   </header>
 
   <main>
-    <!-- Etkinlik Ana Bölüm -->
     <section class="live-event">
       <h2>Canlı Etkinlikler</h2>
       <p>Siz seçin biz yapalım. Eğlenmeye hazır mıyız.</p>
     </section>
 
-    <!-- Fotoğraf Savaşları Bölümü -->
     <section class="fotograf-savaslari">
       <h2>📸 Fotoğraf Savaşları</h2>
       <p>Etkinliği yapmak istediğin tarihi seç:</p>
@@ -33,18 +28,16 @@
       </form>
 
       <div id="secilenTarihGosterimi" class="tarih-gosterimi"></div>
+      <div id="tarihSayac" class="tarih-gosterimi"></div>
     </section>
   </main>
 
-  <!-- Footer Butonları -->
   <footer class="bottom-buttons">
-    <button onclick="location.href='index.html'">Anasayfa</button>
-    <button onclick="location.href='etkinlik.html'">Etkinlik</button>
-    <button onclick="location.href='videolar.html'">Videolar</button>
+    <button data-target="anasayfa">Anasayfa</button>
+    <button data-target="etkinlik">Etkinlik</button>
+    <button data-target="videolar">Videolar</button>
   </footer>
 
-  <!-- JavaScript -->
   <script src="js/main.js" defer></script>
-
 </body>
 </html>
