@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scrollButtons.forEach(button => {
     button.addEventListener('click', function () {
-      const targetId = this.getAttribute('onclick').replace("location.href='#", "").replace("'", "");
+      const targetId = this.getAttribute('data-target');
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
