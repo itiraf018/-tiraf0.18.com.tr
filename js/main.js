@@ -49,24 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('etkinlikTarihiForm');
   const gosterim = document.getElementById('secilenTarihGosterimi');
 
-  // Sayfa yüklendiğinde localStorage'dan tarih alınıp gösteriliyor
-  const storedDate = localStorage.getItem('secilenTarih');
-  if (storedDate) {
-    const [yil, ay, gun] = storedDate.split("-");
-    gosterim.innerHTML = `Seçilen Tarih: ${gun}.${ay}.${yil}`;
+  // Sayfa yüklendiğinde, daha önce kaydedilmiş tarihi göster
+  const savedDate = localStorage.getItem('secilenTarih');
+  if (savedDate) {
+    gosterim.innerHTML = `Seçilen Tarih: ${savedDate}`;
   }
 
+  // Form gönderildiğinde, tarihi kaydet
   if (form && gosterim) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
       const secilenTarih = document.getElementById('tarih').value;
 
       if (secilenTarih) {
-        // Tarih formatını YYYY-MM-DD olarak saklıyoruz
-        localStorage.setItem('secilenTarih', secilenTarih);
-
         const [yil, ay, gun] = secilenTarih.split("-");
-        gosterim.innerHTML = `Seçilen Tarih: ${gun}.${ay}.${yil}`;
+        const formattedDate = `${gun}.${ay}.${yil}`;
+        gosterim.innerHTML = `Seçilen Tarih: ${formattedDate}`;
+        localStorage.setItem('secilenTarih', formattedDate);
       }
     });
   }
