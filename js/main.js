@@ -49,12 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('etkinlikTarihiForm');
   const gosterim = document.getElementById('secilenTarihGosterimi');
 
+  // Sayfa yüklendiğinde localStorage'dan tarih alınıp gösteriliyor
+  const storedDate = localStorage.getItem('secilenTarih');
+  if (storedDate) {
+    const [yil, ay, gun] = storedDate.split("-");
+    gosterim.innerHTML = `Seçilen Tarih: ${gun}.${ay}.${yil}`;
+  }
+
   if (form && gosterim) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       const secilenTarih = document.getElementById('tarih').value;
 
       if (secilenTarih) {
+        // Tarih formatını YYYY-MM-DD olarak saklıyoruz
+        localStorage.setItem('secilenTarih', secilenTarih);
+
         const [yil, ay, gun] = secilenTarih.split("-");
         gosterim.innerHTML = `Seçilen Tarih: ${gun}.${ay}.${yil}`;
       }
