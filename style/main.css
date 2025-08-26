@@ -182,3 +182,38 @@ p {
     padding: 60px 15px;
   }
 }
+
+.fotograf-savaslari {
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2em auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fotograf-savaslari input[type="date"] {
+  padding: 0.5em;
+  margin-right: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.fotograf-savaslari button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fotograf-savaslari h2 {
+  text-align: center;
+}
+
+.tarih-gosterimi {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
