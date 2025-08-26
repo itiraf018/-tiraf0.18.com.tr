@@ -44,3 +44,20 @@ function showToast(message) {
   setTimeout(() => { toast.style.opacity = '0'; }, 3000);
   setTimeout(() => { toast.remove(); }, 3500);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('etkinlikTarihiForm');
+  const gosterim = document.getElementById('secilenTarihGosterimi');
+
+  if (form && gosterim) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const secilenTarih = document.getElementById('tarih').value;
+
+      if (secilenTarih) {
+        const [yil, ay, gun] = secilenTarih.split("-");
+        gosterim.innerHTML = `Seçilen Tarih: ${gun}.${ay}.${yil}`;
+      }
+    });
+  }
+});
