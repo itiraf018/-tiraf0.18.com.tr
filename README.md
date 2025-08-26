@@ -9,6 +9,9 @@ Herhangi bir izinsiz kopyalama, dağıtım veya ticari kullanım kesinlikle yasa
 
 Lütfen içeriklerin kullanımı ile ilgili izin almak için bizimle iletişime geçin.
 
+
+Profilimizin linki = https://www.instagram.com/itiraf.018?utm_source=qr&igsh=MW9oMXc2aHhrMmFvdg==
+
 ---
 
 ## İçindekiler
