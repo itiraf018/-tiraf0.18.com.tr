@@ -7,29 +7,44 @@
   <link rel="stylesheet" href="style/main.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
-<body>
+
+<body class="dark-mode">
 
   <header>
     <h1>İtiraf0.18</h1>
   </header>
 
   <main>
+    <!-- Etkinlik Ana Bölüm -->
     <section class="live-event">
       <h2>Canlı Etkinlikler</h2>
       <p>Buraya canlı etkinliklerle ilgili içerik gelecek.</p>
     </section>
+
+    <!-- Fotoğraf Savaşları Bölümü -->
+    <section class="fotograf-savaslari">
+      <h2>📸 Fotoğraf Savaşları</h2>
+      <p>Etkinliğe katılım tarihini seç:</p>
+
+      <form id="etkinlikTarihiForm">
+        <label for="tarih">Tarih Seç:</label>
+        <input type="date" id="tarih" name="tarih" required>
+        <button type="submit">Tarihi Onayla</button>
+      </form>
+
+      <div id="secilenTarihGosterimi" class="tarih-gosterimi"></div>
+    </section>
   </main>
-<body class="dark-mode">
-  <!-- sayfa içeriği -->
-</body>
-</html>
 
-<link rel="stylesheet" href="css/main.css">
-<script src="js/main.js" defer></script>
-
- <footer class="bottom-buttons">
+  <!-- Footer Butonları -->
+  <footer class="bottom-buttons">
     <button onclick="location.href='index.html'">Anasayfa</button>
     <button onclick="location.href='etkinlik.html'">Etkinlik</button>
     <button onclick="location.href='videolar.html'">Videolar</button>
   </footer>
-<script src="js/main.js"></script>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
