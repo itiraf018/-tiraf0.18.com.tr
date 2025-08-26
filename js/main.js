@@ -43,3 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('anasayfaBtn').addEventListener('click', function() {
   window.location.href = 'index.html';
 });
+
+document.getElementById('etkinlikBtn').addEventListener('click', function() {
+  window.location.href = 'etkinlik.html';
+});
+
+document.getElementById('videolarBtn').addEventListener('click', function() {
+  window.location.href = 'videolar.html';
+});
+
