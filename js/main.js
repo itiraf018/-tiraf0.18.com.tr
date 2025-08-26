@@ -15,15 +15,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// (Opsiyonel) Gelecekte genişletmek için bir örnek fonksiyon
+// (Opsiyonel) Gelecekte genişletmek için toast fonksiyonu
 function showToast(message) {
   const toast = document.createElement('div');
   toast.innerText = message;
   Object.assign(toast.style, {
-    position: 'fixed', bottom: '80px', left: '50%',
-    transform: 'translateX(-50%)', backgroundColor: '#333',
-    color: '#fff', padding: '10px 20px', borderRadius: '6px',
-    zIndex: '10000', opacity: '0', transition: 'opacity 0.3s'
+    position: 'fixed',
+    bottom: '80px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    backgroundColor: '#333',
+    color: '#fff',
+    padding: '10px 20px',
+    borderRadius: '6px',
+    zIndex: '10000',
+    opacity: '0',
+    transition: 'opacity 0.3s'
   });
   document.body.appendChild(toast);
   setTimeout(() => toast.style.opacity = '1', 100);
@@ -31,16 +38,20 @@ function showToast(message) {
   setTimeout(() => toast.remove(), 3500);
 }
 
-// Fotoğraf Savaşları tarih seçimini kalıcı hale getirme
+// Fotoğraf Savaşları tarih seçimini kalıcı yap + sayacını göster
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('etkinlikTarihiForm');
   const gosterim = document.getElementById('secilenTarihGosterimi');
+  const sayacEl = document.getElementById('tarihSayac');
 
-  // Sayfa yüklendiğinde, daha önce kaydedilmiş tarihi göster
+  // Lokal seçim sayacını getir
+  let sayac = parseInt(localStorage.getItem('tarihSecimSayac')) || 0;
+  sayacEl.textContent = `Bu sayfada toplam seçim sayısı: ${sayac}`;
+
+  // Sayfa yüklendiğinde, daha önce seçilmiş tarihi göster
   const savedDate = localStorage.getItem('secilenTarih');
   if (savedDate) gosterim.innerHTML = `Seçilen Tarih: ${savedDate}`;
 
-  // Form gönderildiğinde, tarihi kaydet
   if (form && gosterim) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -48,8 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (secilenTarih) {
         const [yil, ay, gun] = secilenTarih.split("-");
         const formattedDate = `${gun}.${ay}.${yil}`;
+        // Tarih gösterimi
         gosterim.innerHTML = `Seçilen Tarih: ${formattedDate}`;
         localStorage.setItem('secilenTarih', formattedDate);
+
+        // Sayaç arttır ve göster
+        sayac++;
+        localStorage.setItem('tarihSecimSayac', sayac);
+        sayacEl.textContent = `Bu sayfada toplam seçim sayısı: ${sayac}`;
       }
     });
   }
