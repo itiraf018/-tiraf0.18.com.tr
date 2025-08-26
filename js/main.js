@@ -39,3 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.getElementById('anasayfaBtn').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
